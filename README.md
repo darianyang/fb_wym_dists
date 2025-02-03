@@ -27,9 +27,10 @@ If there are any runtime issues check the log file (`output.log`).
     - Scripts for calculating TRP-TYR, TRP-MET, and MET-MET distances.
     - These scripts supercede the ones in `\cdc-rac-rho` in a way, I would reccomend using these for all distance calcs.
         - So use `met-met/calc_distances.py`
+        - Go to the bottom of the script to see example usage, the args will need to be adjusted for your specific use case / preferences.
     - There is also a script available here to convert a comma separated list of PDBs into the properly formatted single column (new line separated) file needed for analysis.
         - `met-met/convert_text.py`
-        - use with 2 CLI args: 
+        - Use with 2 CLI args: 
             - `$ python convert_text.py input_file_name output_file_name`
 
 ---
