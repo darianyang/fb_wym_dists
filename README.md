@@ -21,11 +21,15 @@ If you prefer to avoid having to do this, you can just use MDAnalysis normally a
 If there are any runtime issues check the log file (`output.log`).
 
 ## Directory
-- `\cdc-rac-rho`
+- `/cdc-rac-rho`
     - Scripts for calculating and plotting TRP-TYR and TRP-MET distances.
-- `\met-met`
+- `/met-met`
     - Scripts for calculating TRP-TYR, TRP-MET, and MET-MET distances.
     - These scripts supercede the ones in `\cdc-rac-rho` in a way, I would reccomend using these for all distance calcs.
+        - So use `met-met/calc_distances.py`
     - There is also a script available here to convert a comma separated list of PDBs into the properly formatted single column (new line separated) file needed for analysis.
+        - `met-met/convert_text.py`
+        - use with 2 CLI args: 
+            - `$ python convert_text.py input_file_name output_file_name`
 
 ---
