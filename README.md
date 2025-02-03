@@ -16,6 +16,10 @@ So you would have to clone MDAnalysis locally, then checkout to this PR. Then in
 
 Then, because the mmCIF/PDBx reader relies on gemmi, you'll need to install this as well via `pip install gemmi`.
 
+If you prefer to avoid having to do this, you can just use MDAnalysis normally and ensure that the list of PDBs you provide is available as PDB files, or download the PDBs yourself, and if you store them in a directory named `pdbs` in the same directory that your script runs, this works too.
+
+If there are any runtime issues check the log file (`output.log`).
+
 ## Directory
 - `\cdc-rac-rho`
     - Scripts for calculating and plotting TRP-TYR and TRP-MET distances.
